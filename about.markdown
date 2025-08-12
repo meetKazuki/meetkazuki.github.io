@@ -4,15 +4,22 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey there, I'm Desmond Edem. Welcome to my little corner of the internet.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm a Backend Engineer by trade, but my curiosity doesn't stop when I clock out. This space is a living document of my journey into the world of homelabs, self-hosting, and all the fascinating tech that comes with it. I believe in learning by doing, and I'm documenting my projects—successes and failures alike—right here.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+When I'm not tinkering with servers or writing code, you can probably find me immersed in a video game or exploring new music.
 
+<h3>Get in Touch</h3>
 
-[jekyll-organization]: https://github.com/jekyll
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/desmondedem" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/meetKazuki" target="_blank" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:meetdesmond.edem@gmail.com" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
