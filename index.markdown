@@ -8,7 +8,7 @@ title: Desmond Edem
 <div id="heading">
   <h1 id="logo">Desmond Edem</h1>
   <div id="tagline">
-    <span>Backend Engineer. Tech Enthusiast. Gamer;</span>
+    <span>Backend Engineer. Tech Enthusiast. Gamer.</span>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/desmondedem" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
