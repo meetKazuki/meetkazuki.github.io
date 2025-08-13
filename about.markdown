@@ -38,7 +38,7 @@ their own journeys in tech.
 </div>
 
 <div class="cv-button__container">
-  <a href="{{ site.cv_url }}" class="cv-button" target="_blank">
+  <a href="/assets/desmond_edem.pdf" class="cv-button" target="_blank">
     <i class="fas fa-file-pdf"></i> View Full CV
   </a>
 </div>
