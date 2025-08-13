@@ -6,6 +6,8 @@ permalink: /about/
 
 Hey there, I'm Desmond Edem. Welcome to my little corner of the internet.
 
+{% include spotify-widget.html spotify_id="7G3lxTsMfSx4yarMkfgnTC" %}
+
 I'm a Backend Engineer by trade, but my curiosity doesn't stop when I clock out. This space is a living document of my journey into the world of homelabs, self-hosting, and all the fascinating tech that comes with it. I believe in learning by doing, and I'm documenting my projects—successes and failures alike—right here.
 
 When I'm not tinkering with servers or writing code, you can probably find me immersed in a video game or exploring new music.
