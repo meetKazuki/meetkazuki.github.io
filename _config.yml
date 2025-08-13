@@ -54,3 +54,5 @@ plugins:
 
 sass:
   quiet_deps: true
+
+cv_url: "https://github.com/meetKazuki/personal-latex-moderncv/releases/download/latest/desmond_edem.pdf"

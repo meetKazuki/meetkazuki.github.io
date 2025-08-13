@@ -1,0 +1,64 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Fetch CV URL & Update Config
+        run: |
+          echo "Fetching CV URL..."
+          CV_URL=$(curl -sL https://github.com/meetKazuki/personal-latex-moderncv/releases/latest | jq -r '.assets[] | select(.name=="desmond_edem.pdf") | .browser_download_url')
+
+          if [ -z "$CV_URL" ] || [ "$CV_URL" == "null" ]; then
+            echo "::warning:: Could not fetch latest CV URL. Using the fallback URL from _config.yml."
+          else
+            echo "Latest CV URL found: $CV_URL"
+            # This command uses 'sed' to find the line starting with 'cv_url:'
+            # and replaces it with the new URL we just fetched.
+            sed -i "s|^cv_url:.*|cv_url: \"${CV_URL}\"|" _config.yml
+            echo "Updated _config.yml for this build."
+          fi
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --destination ${{ steps.pages.outputs.path }}
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.pages.outputs.path }}
+
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

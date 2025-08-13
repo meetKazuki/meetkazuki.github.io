@@ -10,10 +10,10 @@ title: Desmond Edem
   <div class="heading__tagline">
     <span>Backend Engineer. Tech Enthusiast. Gamer.</span>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/desmondedem" target="_blank" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/desmondedem" class="social-links__link" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/meetKazuki" target="_blank" title="Github">
+      <a href="https://github.com/meetKazuki" class="social-links__link" target="_blank" title="Github">
         <i class="fab fa-github"></i>
       </a>
       <a href="mailto:meetdesmond.edem@gmail.com" title="Email">
