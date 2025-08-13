@@ -13,6 +13,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+#home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   text-align: center;
 }
@@ -185,10 +192,10 @@ body {
   /* border-bottom: 1px dotted #007bff; */
 }
 
-.page-content a:hover {
+/* .page-content a:hover {
   color: #0056b3;
   border-bottom-style: solid;
-}
+} */
 
 .social-links {
   margin-top: 1rem;
@@ -238,13 +245,13 @@ body {
   transition: border-color 0.2s ease-in-out;
 }
 
-.post-list h2 a:hover {
+/* .post-list h2 a:hover {
   border-color: #007bff;
-}
+} */
 
 .post-title {
   font-family: "Italiana", serif;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -261,7 +268,7 @@ body {
 
 .post-excerpt {
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.3;
   color: #555;
   margin-top: 0;
   margin-bottom: 1rem;
