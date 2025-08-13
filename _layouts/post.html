@@ -3,7 +3,16 @@ layout: default
 ---
 <article class="page">
   <h1 class="page-title">{{ page.title | escape }}</h1>
-  <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+  <p class="post-meta">
+    {{ page.date | date: "%B %d, %Y" }}
+    {% assign words = page.content | number_of_words %}
+    &bull;
+    {% if words < 360 %}
+      1 min read
+    {% else %}
+      {{ words | divided_by:180 }} mins read
+    {% endif %}
+  </p>
 
   <div class="page-content">
     {{ content }}

@@ -197,6 +197,40 @@ body {
   border-bottom-style: solid;
 } */
 
+.page-content pre,
+.page-content code {
+  font-family: "Menlo", "Consolas", "Monaco", monospace;
+  font-size: 0.9rem;
+}
+
+.page-content pre {
+  background-color: #282828;
+  padding: 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.2;
+}
+
+/* Copy Code Button */
+.copy-code-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  border: 1px solid #6272a4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.page-content pre:hover .copy-code-button {
+  opacity: 1;
+}
+
 .social-links {
   margin-top: 1rem;
   text-align: left;
@@ -288,4 +322,13 @@ body {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #ddd;
+}
+
+:not(pre) > code {
+  background-color: #3c3836;
+  color: #ebdbb2;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 4px;
 }
