@@ -1,13 +1,11 @@
 ---
-title: "On Improving Data Consistency — _A Retrospective_"
+layout: post
+title: "On Improving Data Consistency — A Retrospective"
 date: 2022-09-03 16:01:01
 ---
+A general goal for database systems is to ensure data consistency. Consistency here means the data adheres to constraints (formal and informal). And if one piece of information is stored multiple times, then they all agree. But how can we ensure that? What are some things we should not do in order to achieve this consistency?
 
-A general goal for database systems is to ensure data consistency. Consistency here means the data adheres to constraints (formal and informal). And if one piece of information is
-stored multiple times, then they all agree. But how can we ensure that? What are some things we should not do in order to achieve this consistency?
-
-Let’s pick a scenario (it’s a real life example). You are tasked with building the next social media app. Your users will create posts and share them with the public. This content
-will receive interactions from other users. Your users are interested in how well the content is performing. How do you ensure this information is as consistent and correct as possible?
+Let’s pick a scenario (it’s a real life example). You are tasked with building the next social media app. Your users will create posts and share them with the public. This content will receive interactions from other users. Your users are interested in how well the content is performing. How do you ensure this information is as consistent and correct as possible?
 
 To get through this, let’s retrospect on some of the things I did wrong...
 
