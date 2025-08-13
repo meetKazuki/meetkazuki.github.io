@@ -2,28 +2,15 @@
 layout: post
 title: "On Improving Data Consistency — A Retrospective"
 date: 2022-09-03 16:01:01
-excerpt: "Because what is life without some database consistency challenge?
-Because what is life without some database consistency challenge?
-Because what is life without some database consistency challenge?"
+excerpt: "A general goal for database systems is to ensure data consistency. Consistency here means the data adheres to constraints (formal and informal).
+And if one piece of information is stored multiple times, then they all agree. But how can we ensure that? What are some things we should not do?"
 ---
-{% capture banner_content %}
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
-This is the first paragraph of my important message.
 
-And here is the second paragraph, which can even contain **Markdown** formatting.
-* A bullet point.
-* Another bullet point.
+{% capture banner_content %}
+This was originally published during my time at [STRV](https://www.strv.com/). The original link can be found [here](https://www.strv.com/blog/on-improving-data-consistency-a-retrospective-engineering)
 {% endcapture %}
 
 {% include banner.html type="info" content=banner_content %}
-
-A general goal for database systems is to ensure data consistency. Consistency here means the data adheres to constraints (formal and informal). And if one piece of information is stored multiple times, then they all agree. But how can we ensure that? What are some things we should not do in order to achieve this consistency?
 
 Let’s pick a scenario (it’s a real life example). You are tasked with building the next social media app. Your users will create posts and share them with the public. This content will receive interactions from other users. Your users are interested in how well the content is performing. How do you ensure this information is as consistent and correct as possible?
 
@@ -172,5 +159,5 @@ await like_repository.countDocument({ post_id });
 
 #### Resources
 
-* MongoDB Database Triggers
-* https://www.mongodb.com/docs/manual/reference/method/db.collection.countDocuments/
+* [MongoDB Database Triggers](https://www.mongodb.com/docs/atlas/app-services/triggers/database-triggers/?ref=strv.ghost.io#:~:text=Database%20Triggers%20allow%20you%20to,a%20linked%20MongoDB%20Atlas%20cluster.)
+* `https://www.mongodb.com/docs/manual/reference/method/db.collection.countDocuments/`
