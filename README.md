@@ -26,11 +26,8 @@ TBA
 
 ## Project Status
 
-<div align="center">
-  [![pages-build-deployment](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment)
-
-  [![Website](https://img.shields.io/badge/Live%20Site-meetkazuki.github.io-2196F3?style=for-the-badge&logo=github&logoColor=white)](https://meetkazuki.github.io/)
-</div>
+[![pages-build-deployment](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment)
+[![Website](https://img.shields.io/badge/Live%20Site-meetkazuki.github.io-2196F3?style=for-the-badge&logo=github&logoColor=white)](https://meetkazuki.github.io/)
 
 ## Getting Started
 
