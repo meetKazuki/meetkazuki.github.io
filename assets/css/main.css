@@ -40,9 +40,9 @@ body {
 }
 
 .page__content a {
-  color: #007bff;
+  /* color: #007bff; */
   text-decoration: none;
-  border-bottom: 1px dotted #007bff;
+  /* border-bottom: 1px dotted #007bff; */
 }
 
 .page__content a:hover {
@@ -185,9 +185,9 @@ body {
   border: none;
 }
 
-.post__title a:hover {
+/* .post__title a:hover {
   text-decoration: underline;
-}
+} */
 
 .post__excerpt {
   font-size: 1.1rem;
@@ -216,7 +216,7 @@ body {
 }
 
 /* Social links */
-.social-links a {
+.social-links__link {
   font-size: 1.8rem;
   color: #333;
   margin-right: 1.5rem;
@@ -225,11 +225,11 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-.social-links a:last-child {
+.social-links__link:last-child {
   margin-right: 0;
 }
 
-.social-links a:hover {
+.social-links__link:hover {
   color: #007bff;
 }
 
@@ -271,6 +271,7 @@ body {
   border-color: #2196f3;
   color: #0d47a1;
 }
+
 .banner--info .banner__icon {
   color: #2196f3;
 }
@@ -280,6 +281,7 @@ body {
   border-color: #ffc107;
   color: #856404;
 }
+
 .banner--warning .banner__icon {
   color: #ffc107;
 }
@@ -289,6 +291,7 @@ body {
   border-color: #f44336;
   color: #b71c1c;
 }
+
 .banner--danger .banner__icon {
   color: #f44336;
 }
@@ -296,7 +299,7 @@ body {
 /* Spotify widget */
 .music-widget-wrapper {
   margin: 2.5rem 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
 
@@ -308,7 +311,8 @@ body {
 }
 
 .page__content pre {
-  background-color: #282828; /* Gruvbox background */
+  background-color: #282828;
+  /* Gruvbox background */
   padding: 1.2rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -316,7 +320,7 @@ body {
   position: relative;
 }
 
-:not(pre) > code {
+:not(pre)>code {
   background-color: #3c3836;
   color: #ebdbb2;
   padding: 0.2em 0.4em;
@@ -342,6 +346,35 @@ body {
 
 .page__content pre:hover .copy-code-button {
   opacity: 1;
+}
+
+/* CV button */
+.cv-button__container {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+.cv-button:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.cv-button .fa-file-pdf {
+  margin-right: 0.75rem;
 }
 
 /* --- Responsiveness --- */
