@@ -5,9 +5,9 @@ layout: home
 title: Desmond Edem
 ---
 
-<div id="heading">
-  <h1 id="logo">Desmond Edem</h1>
-  <div id="tagline">
+<div class="heading">
+  <h1 class="heading__logo">Desmond Edem</h1>
+  <div class="heading__tagline">
     <span>Backend Engineer. Tech Enthusiast. Gamer.</span>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/desmondedem" target="_blank" title="LinkedIn">

@@ -1,0 +1,14 @@
+<div class="banner banner--{{ include.type | default: "info" }}">
+  <div class="banner__icon">
+    {% if include.type == 'warning' %}
+      <i class="fas fa-exclamation-triangle"></i>
+    {% elsif include.type == 'danger' %}
+      <i class="fas fa-exclamation-circle"></i>
+    {% else %}
+      <i class="fas fa-info-circle"></i>
+    {% endif %}
+  </div>
+  <div class="banner__content">
+    {{ include.content | markdownify }}
+  </div>
+</div>
