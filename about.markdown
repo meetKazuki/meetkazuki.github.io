@@ -32,6 +32,9 @@ their own journeys in tech.
   <a href="https://github.com/meetKazuki" class="social-links__link" target="_blank" title="Github">
     <i class="fab fa-github"></i>
   </a>
+  <a href="https://medium.com/@desmondedem" class="social-links__link" target="_blank" title="Medium">
+    <i class="fa-brands fa-medium"></i>
+  </a>
   <a href="mailto:meetdesmond.edem@gmail.com" class="social-links__link" title="Email">
     <i class="fas fa-envelope"></i>
   </a>
